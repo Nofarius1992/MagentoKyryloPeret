@@ -14,14 +14,9 @@
             <argument name="init_parameter" xsi:type="init_parameter">Zombie\Homework\Model\InitParametersInterface::REQUEST_TIME</argument>
         </arguments>
         <plugin name="zombie_homework_model_test_params_plugin_after"
-                type="Zombie\Homework\Model\TestParams\PluginAfter"
+                type="Zombie\Homework\Model\TestParams\TestParamsReturnUpdater"
                 sortOrder="10"
                 disabled="false"/>
-        <plugin name="zombie_homework_model_test_params_plugin_around"
-                type="Zombie\Homework\Model\TestParams\PluginAround"
-                sortOrder="10"
-                disabled="false"/>
-
     </type>
 
 </config>

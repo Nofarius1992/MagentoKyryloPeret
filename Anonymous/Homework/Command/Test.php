@@ -54,7 +54,7 @@ class Test extends Command
          * или нескольких выражениях, включая их тип и значение. Массивы и объекты анализируются рекурсивно
          * с разным отступом у значений для визуального отображения структуры.
          */
-        $output->writeln(print_r($this->params->getParams()));
+        $output->writeln(print_r($this->params->getParams('Значение из класса \Anonymous\Homework\Command\Test')));
 
         $output->writeln('------------------------------------------------');
         $output->writeln($this->manager->getMessage());

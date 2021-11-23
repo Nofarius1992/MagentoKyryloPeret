@@ -31,7 +31,7 @@ class TestParams
         $this->eventManager = $eventManager;
     }
 
-    public function getParams(): array
+    public function getParams(string $configParam): array
     {
 
         $this->manager->setMessage('Сообщение измененное из ' . get_class($this));
@@ -40,7 +40,8 @@ class TestParams
             $this->manager,
             $this->array,
             $this->string,
-            $this->init_parameter
+            $this->init_parameter,
+            'Config parameter' => $configParam
         ];
 
         $paramsObj = $this->dataObjectFactory->create([
