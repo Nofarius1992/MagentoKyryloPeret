@@ -1,1 +1,1 @@
-# MagentoKyryloPeret
+# MagentoTest
