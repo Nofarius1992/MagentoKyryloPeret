@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="testparams_getparams_after">
+        <observer name="replace_test_params_observer" instance="Anonymous\Homework\Observer\ReplaceTextParams" />
+    </event>
+
+    <event name="tutorial_object_manager_command">
+        <observer name="replace_message_observer" instance="Anonymous\Homework\Observer\ReplaceMessage" />
+    </event>
+</config>

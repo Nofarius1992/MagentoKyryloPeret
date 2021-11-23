@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <type name="Zombie\Homework\Model\TestParams">
+        <arguments>
+            <argument name="array" xsi:type="array">
+                <item name="arrayTest" xsi:type="array">
+                    <item name="arrayElement1" xsi:type="string">Array element 1</item>
+                    <item name="arrayElement2" xsi:type="string">Array element 2</item>
+                </item>
+                <item name="stringTest" xsi:type="string">To element</item>
+            </argument>
+            <argument name="string" xsi:type="string">Hello World!!!</argument>
+            <argument name="init_parameter" xsi:type="init_parameter">Zombie\Homework\Model\InitParametersInterface::REQUEST_TIME</argument>
+        </arguments>
+        <plugin name="zombie_homework_model_test_params_plugin_after"
+                type="Zombie\Homework\Model\TestParams\TestParamsReturnUpdater"
+                sortOrder="10"
+                disabled="false"/>
+    </type>
+
+</config>
